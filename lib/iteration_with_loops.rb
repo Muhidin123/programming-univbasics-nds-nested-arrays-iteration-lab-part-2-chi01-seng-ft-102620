@@ -4,14 +4,17 @@ def find_min_in_nested_arrays(src)
   
   index = 0
   min_num = []
+  min_temp_help = 150
   while index < src.length do
     inner_count = 0
     while inner_index < src[index].length do
-      if src[index][inner_index]
-        min_num << src[count][inner_count]
+      if src[index][inner_index] < min_temp_help
+        min_temp_help = src[index][inner_index]
       end
       inner_count += 1
     end
-    count += 1
+    index += 1
+    min_num << min_temp_help
   end
+  min_num
 end
