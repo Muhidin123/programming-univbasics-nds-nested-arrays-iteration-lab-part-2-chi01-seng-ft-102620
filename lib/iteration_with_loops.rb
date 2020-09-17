@@ -15,5 +15,6 @@ def find_min_in_nested_arrays(src)
     end
     index += 1
     min_num << min_temp_help
+    min_num
   end
 end
