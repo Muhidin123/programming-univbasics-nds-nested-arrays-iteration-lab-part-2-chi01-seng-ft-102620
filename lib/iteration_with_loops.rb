@@ -6,7 +6,7 @@ def find_min_in_nested_arrays(src)
     arr2 = []
     min_num = (src[index]).min {|a , b| a <=> b}
     index += 1
-    arr = min_num
+    arr << min_num
   end
   arr
 end
